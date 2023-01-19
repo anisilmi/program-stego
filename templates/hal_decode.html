@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+        <title>Dekripsi</title>
+    </head>
+<body>
+    <div class="container">
+        <a href="/">Home</a>
+        <div class="row">
+            <div class="col-sm-12" style="max-width: 900px; float: none; margin: 0 auto; margin-top: 40px; margin-bottom: 0px; color: #4b4b4b;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Decode Citra Digital</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-md-6" 
+                            style= "padding: 50px 15px; color: #4b4b4b;">
+                                <h4>Dekripsi</h4>
+                                <p>Dekripsi adalah pengolahan data menjadi sesuatu yang dapat diutarakan secara jelas dan tepat dengan tujuan dimengerti oleh orang yang tidak langsung mengalaminya sendiri.</p>
+                            </div>
+                            <div class="col-md-6" style= "padding: 10px; color: white;">
+                                <!-- start Form Enkripsi -->
+                                <form action="/decode" method="post" enctype=multipart/form-data style="padding: 0px; margin: 0 auto;">
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label" style="color: #383838;">Input Stego Image</label>
+                                        <input class="form-control smooth" type="file" name="stego" id="file">
+                                    </div>
+                                    <label class="form-label" style="color: #383838;">Masukkan Kunci</label>
+                                    <input type="text" name="kunci2" class="form-control smooth text-center" placeholder="Masukkan kunci" aria-label="Last name">
+                                    <input type="submit" name="action" value="decode"  class="smooth cari btn btn-info btn-circle btn-lg btn-outline-dark" style="background-color: #4b4b4b; border-color: #383838; margin-top:15px;">
+                                </form>
+                                    <!-- End Form Enkripsi -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="decode" class="row" style="padding-top: 15px;;margin-bottom: 50px;">
+                    <div class="col-md-6">
+                        <h5>Hasil Enkripsi</h5>
+                        <div class="col-md-6" style="padding-top: 15px;">
+                                <!-- {{ nonce }} -->
+                                <p>Hidden Text    : {{ hidden_object }} </p> 
+                                <p>Plaintext    : {{ plaintext }} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer font-small stylish-color-dark pt-4"  style="background-color:#f5f5f5">
+        <!--Footer Links-->
+        <div class="container text-center text-md-left">
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+                <!--First column-->
+                <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-2 font-weight-bold">Profile Aplikasi</h6>
+                    <p>Steganografi Citra Digital Menggunakan Metode RPE pada Kriptografi AES (Analisis Robutsness dan Fidelity)</p>
+                </div>
+                <!--/.First column-->
+                <hr class="w-100 clearfix d-md-none">
+                <!--Fourth column-->
+                <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-2 font-weight-bold">Kontak</h6>
+                    <i class="fa fa-home"></i>Universitas Pembangunan Nasional "Veteran" Yogyakarta<br/>
+                    <i class="fa fa-envelope"></i> 123170013@student.upnyk.ac.id
+                </div>
+            </div>
+            <hr>
+            <div class="row d-flex align-items-center">
+                <!--Grid column-->
+                <div class="col-md-8 col-lg-8">
+                    <!--Copyright-->
+                    <p class="text-center text-md-left grey-text">© 2022 Copyright</p>
+                    <!--/.Copyright-->
+                </div>
+                <!--Grid column-->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

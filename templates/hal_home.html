@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Steganografi</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='css/style.css') }}">
+</head>
+<body>
+<div>		
+	<div class="bg-color">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-sm-12" style="max-width: 900px; float: none; margin: 0 auto; margin-top: 40px; margin-bottom: 0px; color: white;">
+	                <div class="row justify-content-center text-center align-items-center">
+	                    <div class="col-xl-4">
+	                      	<img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="/static/img/UPNVY.png">
+	                    </div>
+	                    <div class="col-xl-12 col-lg-9 col-md-12 mb-3">
+	                      	<h3 class="display-3">
+	                        STEGANOGRAFI
+	                        <br>
+	                        CITRA DIGITAL
+	                        </h3>
+	                        <!-- <h3>Menggunakan Metode RPE</h3> -->
+	                    </div>
+	                    <div class="row pad-3 mb-4 g-3">
+	                       	<div class="col">
+	                      		<a href= "/encode" type="button" class="smooth cari btn btn-red btn-circle btn-lg btn-outline-light mx-1" style=" border-color: white; margin-top:15px;">Enkripsi</a>
+	                       	</div>
+	                     	<div class="col">
+	                       		<a href= "/decode" type="button" class="smooth cari btn btn-info btn-circle btn-lg btn-outline-light mx-1" style="background-color: #4b4b4b; border-color: #383838; margin-top:15px;">Dekripsi</a>
+	                       	</div>
+	                    </div>
+	                    <div class="mb-3">
+
+						</div>
+	                </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="page-footer font-small stylish-color-dark pt-4"  style="background-color:#f5f5f5">
+    <!--Footer Links-->
+    <div class="container text-center text-md-left">
+        <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+            <!--First column-->
+            <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+                <h6 class="text-uppercase mb-2 font-weight-bold">Profile Aplikasi</h6>
+                <p>Steganografi Citra Digital Menggunakan Metode RPE pada Kriptografi AES (Analisis Robutsness dan Fidelity)</p>
+            </div>
+            <!--/.First column-->
+            <hr class="w-100 clearfix d-md-none">
+            <!--Fourth column-->
+            <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+                <h6 class="text-uppercase mb-2 font-weight-bold">Kontak</h6>
+                <i class="fa fa-home"></i>Universitas Pembangunan Nasional "Veteran" Yogyakarta<br/>
+                <i class="fa fa-envelope"></i> 123170013@student.upnyk.ac.id
+                <!-- <i class="fa fa-phone"></i> +68 8966 4775 546 -->
+            </div>
+        </div>
+        <hr>
+        <div class="row d-flex align-items-center">
+        <!--Grid column-->
+            <div class="col-md-8 col-lg-8">
+                <!--Copyright-->
+                <p class="text-center text-md-left grey-text">© 2022 Copyright</p>
+                <!--/.Copyright-->
+            </div>
+            <!--Grid column-->
+        </div>
+    </div>
+</footer>
+</body>
+</html>
